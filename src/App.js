@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "antd/dist/antd.css";
+import "./App.css";
+import { Typography, Switch } from "antd";
+import { Divider } from "antd";
+import React, { useState } from "react";
+import { Form, Input, Button, Radio } from "antd";
+import FormInput from "./Components/FormInput";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Todo App</h1>
+      <Divider orientation="right"></Divider>
+      <FormInput />
     </div>
   );
 }
